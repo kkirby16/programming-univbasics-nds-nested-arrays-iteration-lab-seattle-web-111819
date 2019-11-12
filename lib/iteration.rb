@@ -20,14 +20,16 @@ def find_greater_pair(src)
 end
 
 def total_even_pairs(src)
+  sum = 0
   i = 0 
   while i < src.length do
   if (src[i][0] % 2 == 0) && (src[i][1] % 2 == 0)
-     src[i][0] + src[i][1]
+    sum = src[i][0] + src[i][1]
    end
    i += 1 
  end 
-end 
+ return sum
+end
   
   
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
